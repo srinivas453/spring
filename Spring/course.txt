@@ -50,10 +50,14 @@ Spring Core:
 	c. JSR250 (Resource, PostConstruct, PreDestroy)
 	d. JSR330 (Inject, Named, Qualifier, Scope, Singleton, Provider)
 16. Properties & Place holder & Environment
+	PropertyPlaceholderConfigurer
+	PropertySourcesPlaceholderConfigurer
+	application.properties
 17.Spring Events
+	ApplicationEvent
 	ApplicationListener
+	ApplicationEventPublisher
+	ApplicationEventPublisherAware
+	ContextRefreshedEvent, ContextStartedEvent, RequestHandledEvent
+	@EventListener
 18. Java Based Configuration
-
-
-Spring With Hibernate
-=====================
