@@ -1,0 +1,59 @@
+Spring Core:
+============
+
+1. Dependency Injection
+2. IOC
+3. Spring Core Container
+4. Initialize Container
+5. Declaring & Accessing Beans
+	<bean id="">
+	BeanFactory or ApplicationContext's getBean()
+6. DI Types
+	a. Constructor
+		<constructor-arg>
+	b. Setter
+		<property>
+7. Bean Instantiation 
+	a. Constructor
+	b. Static Factory Method (using factory-method attribute in bean)
+	c. Non static factory method (using factory-method & factory-bean attribute in bean)
+8. Bean Scopes(scope attribute of bean)
+	a. Singleton (default)
+	b. Prototype
+	c. request
+	d. session
+9. Bean Initialization/Destruction
+	a. init-method of bean / InitializingBean -> afterPropertiesSet()
+	b. destroy-method of bean / DisposableBean -> destroy()
+10. Method Injection
+	a. lookup method injection
+		signature: public|protected [abstract] <return type> methodName(<no args>)
+		lookup-method of bean
+11. Bean Autowiring
+	a. byName
+	b. byType
+	c. no default wiring
+12. Collections
+13. Bean Definition Inheritance
+14. Extra/Misc
+		a. ApplicationContextAware
+		b. BeanNameAware
+		c. BeanPostProcessor
+		d. BeanFactoryPostProcessor
+		e. bean lazy initialization
+		f. Inner beans
+		g. aliases
+		f. idref
+15. Annotations
+	a. @Required
+	b. @Autowired
+	c. JSR250 (Resource, PostConstruct, PreDestroy)
+	d. JSR330 (Inject, Named, Qualifier, Scope, Singleton, Provider)
+16. Properties & Place holder & Environment
+17.Spring Events
+	ApplicationListener
+18. Java Based Configuration
+
+
+Spring With Hibernate
+=====================
