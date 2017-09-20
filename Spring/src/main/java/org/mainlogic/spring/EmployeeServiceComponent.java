@@ -9,11 +9,16 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class EmployeeServiceComponent {
 
 	@Inject
-	@Qualifier("EmployeeService")
+	@DefaultService("OtherEmployeeService")
 	private BaseService service;
-	
+
 	public String getName() {
 		
 		return service.getName();
+	}
+	
+	public Integer getId() {
+		
+		return service.getId();
 	}
 }

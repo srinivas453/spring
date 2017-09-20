@@ -3,17 +3,25 @@ package org.mainlogic.spring;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-
-@Named("EmployeeService")
-@Qualifier
+@Named
+@DefaultService("EmployeeService")
 public class EmployeeService extends BaseService {
 
 	@Inject
 	private Employee employee;
 	
+	
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+	
 	public String getName() {
 		
-		return employee.getName();
+		return "EMPService:" +employee.getName();
+	}
+	
+	public Integer getId() {
+		
+		return employee.getId();
 	}
 }

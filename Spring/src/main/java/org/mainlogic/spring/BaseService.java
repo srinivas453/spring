@@ -6,4 +6,9 @@ public class BaseService {
 		
 		return null;
 	}
+	
+public Integer getId() {
+		
+		return null;
+	}
 }
